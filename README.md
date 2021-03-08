@@ -6,7 +6,7 @@
 ```
 $(document).ready(function() {
   let api = 'https://api.themoviedb.org/3/search/movie';
-  let apiKey = '6c0856c8aca4264172f895e370451731';
+  let apiKey = 'Enter your API key here';
   let language = "en-US";
 
   $('#searchBtn').click(() => {
@@ -71,7 +71,7 @@ The above code is what I have conceptualised to address pagination since every i
 ```
 $(document).ready(function() {
   let api = 'https://api.themoviedb.org/3/search/movie';
-  let apiKey = '6c0856c8aca4264172f895e370451731';
+  let apiKey = 'Enter your API key here';
   let language = "en-US";
 
   $('#searchBtn').click(() => {
