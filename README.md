@@ -443,7 +443,11 @@ The ways to traverse through the JSON given that "data" is the base are the foll
 
 But it is necessary to find a way to traverse through the items in the "results" array in order for us to get the necessary data we need.
 
-In order for us to do that, we use the following codeblock below where `i` is the array index number and `item` is the placeholding variable for `data.results`
+Normally, we'd access each index by denoting `data.results[0]` and if we want the title, `data.results[0].title`. But doing that manually is inefficient and can potentially give us lines of unnecessary code.
+
+In order for us to simplify that, we use the following codeblock below `$.each` where `i` is the array index number and `item` is the placeholding variable for `data.results`
+
+More info about `.each()` here: https://api.jquery.com/each/#entry-examples
 
 ```
 $.each(data.results, (i, item) => {
@@ -452,3 +456,5 @@ $.each(data.results, (i, item) => {
 ```
 
 The `append` function there is for testing if the `.each` code block is working by appending `<li>` inside the existing `<ul id="list>`
+
+`item.title` then will return us the title of the movie from that results array indexes.
